@@ -1,0 +1,16 @@
+extends ./pug/_layout.pug
+
+block variables
+	- var title = 'Translator App'
+	- var atr={}
+
+block scripts
+
+
+block content
+	.wrapper
+		//-header.header
+			include ./pug/_header.pug
+		main.page 
+			include ./pug/_page.pug
+		//-footer.footer

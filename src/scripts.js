@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("script enabled"),document.querySelectorAll(".controls__sound").forEach((function(e){e.addEventListener("click",(function(){var n,t=e.parentElement.parentElement.querySelector("textarea");(n=new SpeechSynthesisUtterance(t.value)).lang="en-US",speechSynthesis.speak(n)}))}))})();

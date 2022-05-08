@@ -1,0 +1,144 @@
+@import "./_fonts.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Lato;
+  background-color: tomato;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1320px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 60vh;
+  margin: 0 auto;
+  border: 1px solid black;
+
+  &__inputs {
+    flex: 1;
+  }
+
+  &__transalte {
+    display: block;
+    width: 100%;
+    height: 15%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    background-color: blueviolet;
+    border: none;
+  }
+}
+
+.app-inputs {
+  display: flex;
+
+  &__from {
+    flex: 0 0 50%;
+  }
+
+  &__to {
+    flex: 0 0 50%;
+  }
+}
+
+.ai-from {
+  &__textarea {
+    height: 75%;
+
+    textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+    }
+  }
+
+  &__controls {
+    height: 25%;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__lang {
+    flex: 0 0 40%;
+    height: 30%;
+
+    select {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__copy {
+    flex: 0 0 20%;
+    cursor: pointer;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__sound {
+    flex: 0 0 20%;
+    cursor: pointer;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.ai-to {
+  &__textarea {
+    height: 75%;
+
+    textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+    }
+  }
+
+  &__controls {
+    height: 25%;
+  }
+}
+
+textarea {
+  padding: 20px;
+  font-size: 24px;
+}

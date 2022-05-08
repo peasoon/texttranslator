@@ -1,0 +1,12 @@
+block variables
+
+
+doctype
+html(lang='en')&attributes(atr)
+	head
+		include ./_head.pug
+		block scripts
+		title #{title}
+	body
+		block content
+		script(src="./scripts.js")
