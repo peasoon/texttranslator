@@ -15,15 +15,11 @@
             <div class="app__inputs app-inputs">
               <div class="app-inputs__from ai-from">
                 <div class="ai-from__textarea">
-                  <textarea></textarea>
+                  <textarea id="translateFrom"></textarea>
                 </div>
                 <div class="controls ai-from__controls">
                   <div class="controls__lang">
-                    <select>
-                      <option value="">Ru</option>
-                      <option value="">Eng</option>
-                      <option value="">Kz</option>
-                    </select>
+                    <select id="langFrom"></select>
                   </div>
                   <div class="controls__copy">
                     <svg><use xlink:href="./img/copy.svg#copy"></use></svg>
@@ -35,15 +31,11 @@
               </div>
               <div class="app-inputs__to ai-to">
                 <div class="controls ai-to__textarea">
-                  <textarea></textarea>
+                  <textarea id="translateTo"></textarea>
                 </div>
                 <div class="controls ai-to__controls">
                   <div class="controls__lang">
-                    <select>
-                      <option value="">Ru</option>
-                      <option value="">Eng</option>
-                      <option value="">Kz</option>
-                    </select>
+                    <select id="langTo"></select>
                   </div>
                   <div class="controls__copy">
                     <svg><use xlink:href="./img/copy.svg#copy"></use></svg>
@@ -54,7 +46,7 @@
                 </div>
               </div>
             </div>
-            <button class="app__transalte">Translate</button>
+            <button class="app__transalte" id="translate">Translate</button>
           </div>
         </div>
       </main>

@@ -3,28 +3,22 @@
 		.app__inputs.app-inputs 
 			.app-inputs__from.ai-from
 				.ai-from__textarea 
-					textarea
+					textarea#translateFrom
 				.controls.ai-from__controls
 					.controls__lang
-						select
-							option(value="") Ru 
-							option(value="") Eng
-							option(value="") Kz
+						select#langFrom
 					.controls__copy
 						<svg><use xlink:href="./img/copy.svg#copy"></use></svg>
 					.controls__sound
 						<svg><use xlink:href="./img/sound.svg#sound"></use></svg>
 			.app-inputs__to.ai-to
 				.controls.ai-to__textarea 
-					textarea
+					textarea#translateTo
 				.controls.ai-to__controls
 					.controls__lang
-						select
-							option(value="") Ru 
-							option(value="") Eng
-							option(value="") Kz
+						select#langTo
 					.controls__copy
 						<svg><use xlink:href="./img/copy.svg#copy"></use></svg>
 					.controls__sound
 						<svg><use xlink:href="./img/sound.svg#sound"></use></svg>
-		button.app__transalte Translate
+		button.app__transalte#translate Translate
